@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'user.edit'|trans }}{% endblock %}
+
+{% block content %}
+    <h1>{{ 'user.edit'|trans }}</h1>
+
+    {{ include('user/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a class="btn btn-primary" href="{{ path('user_index') }}">{{ 'button.back'|trans }}</a>
+{% endblock %}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="en" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="bkmKn_t" resname="must_be_complex">
+        <source>must_be_complex</source>
+        <target>The password must contain at least one number, one lowercase character and one uppercase character.</target>
+      </trans-unit>
+      <trans-unit id="nIdzumU" resname="user.exists">
+        <source>user.exists</source>
+        <target>This email has already been used</target>
+      </trans-unit>
+      <trans-unit id="pVZ4m.T" resname="user.password">
+        <source>user.password</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

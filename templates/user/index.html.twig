@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'user.list'|trans }}{% endblock %}
+
+{% block content %}
+    <h1>{{ 'user.list'|trans }}</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>{{ 'id'|trans }}</th>
+                <th>{{ 'user.email'|trans }}</th>
+                <th>{{ 'holiday.entitlement'|trans }}</th>
+                <th>{{ 'actions'|trans }}</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for user in users %}
+            <tr>
+                <td>{{ user.id }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.leaveEntitlement.hours }} Hours</td>
+                <td>
+                    <a class="btn btn-primary" href="{{ path('user_show', {'id': user.id}) }}">{{ 'button.show'|trans }}</a>
+                    <a class="btn btn-primary" href="{{ path('user_edit', {'id': user.id}) }}">{{ 'button.edit'|trans }}</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">{{ 'no_records'|trans }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

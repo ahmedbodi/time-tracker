@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {{ leave_entitlement.user }}'s {{ 'leave_entitlement.title'|trans }} {% endblock %}
+
+{% block content %}
+    <h1>{{ leave_entitlement.user }}'s {{ 'leave_entitlement.title'|trans }}</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>{{ 'holiday_entitlement.hours'|trans }}</th>
+                <td>{{ leave_entitlement.hours }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a class="btn btn-primary" href="{{ path('leave_entitlement_index') }}">{{ 'button.back'|trans }}</a>
+    <a class="btn btn-primary" href="{{ path('leave_entitlement_edit', {'id': leave_entitlement.id}) }}">{{ 'button.edit'|trans }}</a>
+{% endblock %}

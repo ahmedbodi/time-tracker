@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'user.show'|trans }}{% endblock %}
+
+{% block content %}
+    <h1>{{ 'user.show'|trans }}</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>{{ 'id'|trans }}</th>
+                <td>{{ user.id }}</td>
+            </tr>
+            <tr>
+                <th>{{ 'user.email'|trans }}</th>
+                <td>{{ user.email }}</td>
+            </tr>
+            <tr>
+                <th>{{ 'holiday.entitlement'|trans }}</th>
+                <td>{{ user.leaveEntitlement.hours }} Hours</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a class="btn btn-primary" href="{{ path('user_index') }}">{{ 'button.back'|trans }}</a>
+
+    <a class="btn btn-primary" href="{{ path('user_edit', {'id': user.id}) }}">{{ 'button.edit'|trans }}</a>
+{% endblock %}

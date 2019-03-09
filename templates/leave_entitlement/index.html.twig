@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'leave_entitlement.list'|trans }}{% endblock %}
+
+{% block content %}
+    <h1>{{ 'leave_entitlement.list'|trans }}</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>{{ 'id'|trans }}</th>
+                <th>{{ 'holiday.entitlement'|trans }}</th>
+		<th>{{ 'user.title'|trans }}</th>
+                <th>{{ 'actions'|trans }}</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for leave_entitlement in leave_entitlements %}
+            <tr>
+                <td>{{ leave_entitlement.id }}</td>
+                <td>{{ leave_entitlement.hours }}</td>
+		<td>{{ leave_entitlement.user }}</td>
+                <td>
+                    <a class="btn btn-primary" href="{{ path('leave_entitlement_show', {'id': leave_entitlement.id}) }}">show</a>
+                    <a class="btn btn-primary" href="{{ path('leave_entitlement_edit', {'id': leave_entitlement.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="3">{{ 'no_records'|trans }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

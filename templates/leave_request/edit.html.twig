@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'leave_request.edit'|trans }}{% endblock %}
+
+{% block content %}
+    <h1>{{ 'leave_request.edit'|trans }}</h1>
+
+    {{ include('leave_request/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a class="btn btn-primary" href="{{ path('leave_request_index') }}">{{ 'button.back'|trans }}</a>
+{% endblock %}

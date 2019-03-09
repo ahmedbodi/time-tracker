@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ leave_request.user }}'s {{ 'leave_request.title'|trans }} {% endblock %}
+
+{% block content %}
+    <h1>{{ leave_request.user }}'s {{'leave_request.title'|trans }}</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>{{ 'id'|trans }}</th>
+                <td>{{ leave_request.id }}</td>
+            </tr>
+            <tr>
+                <th>{{ 'leave_request.reason'|trans }}</th>
+                <td>{{ leave_request.reason }}</td>
+            </tr>
+            <tr>
+                <th>{{ 'leave_request.date_from'|trans }}</th>
+                <td>{{ leave_request.dateFrom ? leave_request.dateFrom|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>{{ 'leave_request.date_to'|trans }}</th>
+                <td>{{ leave_request.dateTo ? leave_request.dateTo|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>{{ 'leave_request.approved'|trans }}</th>
+                <td>{{ leave_request.isApproved ? 'Yes' : 'No' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a class="btn btn-primary" href="{{ path('leave_request_index') }}">{{ 'button.back'|trans }}</a>
+
+    <a class="btn btn-primary" href="{{ path('leave_request_edit', {'id': leave_request.id}) }}">{{ 'button.edit'|trans }}</a>
+{% endblock %}

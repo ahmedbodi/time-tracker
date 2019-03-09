@@ -1,0 +1,74 @@
+site:
+  name: My Website
+
+id: ID
+
+button:
+  save: Save
+  back: Back
+  show: View
+  edit: Edit
+  delete: Delete
+  new: New
+user:
+  title: Employee
+  email: Email
+  password:
+    first: Password
+    second: Repeat password
+  name: Name
+  show: Viewing User
+
+  not-found: User not found
+  list: User List
+  edit: Edit
+  forgot-password: I forgot my password
+  login: Login
+  logout: Logout
+  no-account: I don't have an account
+  reset-password: Reset password
+  sign-up: Sign up
+  update:
+    success: Your account has been updated
+    error: Please try again later
+
+  welcome: Welcome! You have signed in successfully
+  yes-account: I already have an account
+  entitlement:
+    view: View Your Holiday Entitlement
+rememberme: Remember me
+
+admin:
+  user:
+    index: View User's
+
+  leave_request:
+    index: View Holiday Requests
+
+  leave_entitlement:
+    index: View Holiday Entitlements
+
+holiday:
+  entitlement: Holiday Entitlement (Hours)
+
+actions: Actions
+no_records: No Records Found
+
+leave_request:
+  new: Create a new holiday request
+  title: Holiday Request
+  reason: Reason
+  date_from: Date From
+  date_to: Date To
+  approved: Approved?
+  list: Holiday Request List
+  user: Employee
+  edit: Edit Holiday Request
+
+leave_entitlement:
+  list: Holiday Entitlement List
+  title: Holiday Entitlement
+  edit: Edit Holiday Entitlement
+
+holiday_entitlement:
+  hours: Holiday Entitlement (Hours)

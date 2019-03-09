@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="en" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="M6qnFY6" resname="rememberme">
+        <source>rememberme</source>
+        <target>Remember me</target>
+      </trans-unit>
+      <trans-unit id="dffZERE" resname="site.name">
+        <source>site.name</source>
+        <target>My Website</target>
+      </trans-unit>
+      <trans-unit id="K_.1t1m" resname="button.save">
+        <source>button.save</source>
+        <target>Save</target>
+      </trans-unit>
+      <trans-unit id="YfUYcGV" resname="user.email">
+        <source>user.email</source>
+        <target>Email</target>
+      </trans-unit>
+      <trans-unit id="pj24hxK" resname="user.password.first">
+        <source>user.password.first</source>
+        <target>Password</target>
+      </trans-unit>
+      <trans-unit id=".THTeZm" resname="user.password.second">
+        <source>user.password.second</source>
+        <target>Repeat password</target>
+      </trans-unit>
+      <trans-unit id="xp8mj7Q" resname="user.name">
+        <source>user.name</source>
+        <target>Name</target>
+      </trans-unit>
+      <trans-unit id="6umWNKn" resname="user.not-found">
+        <source>user.not-found</source>
+        <target>User not found</target>
+      </trans-unit>
+      <trans-unit id="vQxH4zm" resname="user.edit">
+        <source>user.edit</source>
+        <target>Edit</target>
+      </trans-unit>
+      <trans-unit id="USvkW5O" resname="user.forgot-password">
+        <source>user.forgot-password</source>
+        <target>I forgot my password</target>
+      </trans-unit>
+      <trans-unit id="rruB2OR" resname="user.login">
+        <source>user.login</source>
+        <target>Login</target>
+      </trans-unit>
+      <trans-unit id="okzpfQC" resname="user.logout">
+        <source>user.logout</source>
+        <target>Logout</target>
+      </trans-unit>
+      <trans-unit id=".Zd6R7i" resname="user.no-account">
+        <source>user.no-account</source>
+        <target>I don't have an account</target>
+      </trans-unit>
+      <trans-unit id="iCW9db0" resname="user.reset-password">
+        <source>user.reset-password</source>
+        <target>Reset password</target>
+      </trans-unit>
+      <trans-unit id="gOfqQIk" resname="user.sign-up">
+        <source>user.sign-up</source>
+        <target>Sign up</target>
+      </trans-unit>
+      <trans-unit id="Tbx0t.c" resname="user.update.success">
+        <source>user.update.success</source>
+        <target>Your account has been updated</target>
+      </trans-unit>
+      <trans-unit id="clP4tMl" resname="user.update.error">
+        <source>user.update.error</source>
+        <target>Please try again later</target>
+      </trans-unit>
+      <trans-unit id="rkcJfIn" resname="user.welcome">
+        <source>user.welcome</source>
+        <target>Welcome! You have signed in successfully</target>
+      </trans-unit>
+      <trans-unit id="F3Wlplh" resname="user.yes-account">
+        <source>user.yes-account</source>
+        <target>I already have an account</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
